@@ -78,7 +78,7 @@ module "rds" {
 
   db_subnet_ids = module.vpc.private_db_subnet_ids
 
-  rds_security_group_id = module.security.rds_security_group_id
+  rds_security_group_id = module.sg.rds_security_group_id
 }
 
 # --------------------------------------------------
